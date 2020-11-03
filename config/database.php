@@ -1,7 +1,7 @@
 
 <?php
 $DATABASE_URL=parse_url('postgres://gcdtlftknsidyc:bcd7cfac7448752611ed54f23fedeec51e66285cd39b38430927c997dad83920@ec2-3-233-236-188.compute-1.amazonaws.com:5432/deevgelsrjsjk0 ');
-use Illuminate\Support\Str;
+
 
 return [
 
@@ -73,7 +73,6 @@ return [
             'password' => $DATABASE_URL["pass"],
             'charset' => 'utf8',
             'prefix' => '',
-            'prefix_indexes' => true,
             'schema' => 'public',
             'sslmode' => 'prefer',
         ],
